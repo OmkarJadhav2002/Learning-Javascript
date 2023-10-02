@@ -26,4 +26,5 @@ let convertEmptyString = String(emptyString)
 console.log(typeof emptyString) 
 console.log(typeof convertEmptyString) 
 console.log(emptyString) // blank space
-console.log(convertEmptyString) // blank space 
+console.log(convertEmptyString) // blank space   
+
