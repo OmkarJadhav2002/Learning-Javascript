@@ -22,3 +22,42 @@ console.log(typeof("Omkar")) //string
 console.log(typeof undefined) // undefined
 console.log(typeof null) // object 
 
+// Datatypes (Interview Related) 
+// Types of Datatypes 
+/* 1. Primitive Datatypes 
+   7 Types: String, Number, Boolean, null, undefined, Symbol, 
+   BigInt  
+*/
+
+
+// Javascript is dynamically type of staticaly typed language?
+// dynamically typed (you don't need to mention the datatype)
+// const score = 100 
+// let sample = false 
+
+// How to declare symbol 
+const id = Symbol("123") 
+const anotherId = Symbol("123") 
+console.log(id === anotherId) 
+
+const bigNumber = 46713264876n
+console.log(typeof bigNumber) // bigint 
+
+/* 2. Non-primitive/Reference type Datatypes 
+   Arrays, Objects, Functions
+*/
+// declairing arrays 
+const array = ["G63", "Macan", "Urus", "Thar"] 
+
+// declaring objects 
+const object = {
+   name: "Omkar",
+   age: 21
+}
+
+// declaring function 
+const myFunc = function(){
+   console.log("Hello Duniya")
+}
+
+console.log(typeof myFunc)
