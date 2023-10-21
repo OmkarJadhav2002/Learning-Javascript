@@ -1,19 +1,41 @@
-// Strings in JS 
 
-const name = "Omkar" 
-const repoCount = 15 
+const name = "Omkar Jadhav"
+const count = 18
+// console.log(name)
 
-// console.log(name + repoCount) // outdated syntax 
+// concatenating the string (old method not a good practice)
+// console.log(st + " is a Batman.")
 
-// Another way: string interpolation, use back ticks with $ sign followed by {}
-// more readable, reliable, mordern way 
-console.log(`My name is ${name}. I have created about ${repoCount} repositories on gitgub.`) 
+// concatenating using backticks *** 
+console.log(`Hello my name is ${name} and my repocount on github is ${count}.`)
 
-// another syntax to define the string 
-const carName = new String("Porsche Macan")
-console.log(carName) 
-console.log(carName[1]) 
-console.log(carName.length)
-console.log(carName.toUpperCase()) 
-console.log(carName.charAt(2)) 
-console.log(carName.indexOf('o')) 
+// another way to define string 
+const gameName = new String("Call of Duty") 
+console.log(gameName) 
+
+// you can access the elements using indexing 
+console.log(gameName[0])
+
+// you can use the inbuilt functions 
+console.log(gameName.length)
+console.log(gameName.toLowerCase())
+console.log(gameName.charAt(2))
+console.log(gameName.indexOf("c")) // if present returns index, if not returns -1
+
+// converting to substring 
+const newString = gameName.substring(0, 4) // you cannot use negative values here
+console.log(newString) 
+
+// slicing 
+const anotherString = gameName.slice(-5, -2) // you can provide the negative values also (same as slicing in python)
+console.log(anotherString)
+
+// trim method: to remove the blank(white spaces) spaces 
+const newStringOne = "               omkar             "
+console.log(newStringOne)
+console.log(newStringOne.trim())
+
+const anotherGame = new String("Prince-of-Persia-Sangamner")
+console.log(anotherGame.split('-'))
+
+
